@@ -18,14 +18,14 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         prime = new boolean[maximum];
         primeList = new ArrayList<>();
 
-        isPrime();
+        isPrime(maximum);
         printPrimes();
     }
 
     public static boolean isPrime(int p) {
         //p = this.maximum;
         prime = new boolean[p + 1];
-        if (p <= 2){
+        if (p <= 2) {
             return false;
         }
 
@@ -33,14 +33,14 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         Arrays.fill(prime, true);
 
         for (int i = 2; i * i <= p; i++) {
-            if(prime[i]){
-                for(int j = i; j * i <= p; j++){
+            if (prime[i]) {
+                for (int j = i; j * i <= p; j++) {
                     prime[j * i] = false;
                 }
             }
 
-            for(int a = 0; a <= p; a++){
-                if(prime[a]){
+            for (int a = 0; a <= p; a++) {
+                if (prime[a]) {
                     primeList.add(a);
                 }
             }
