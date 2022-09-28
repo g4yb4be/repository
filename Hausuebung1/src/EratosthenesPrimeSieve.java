@@ -45,6 +45,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
                 }
             }
         }
+        return true;
     }
 
     @Override
