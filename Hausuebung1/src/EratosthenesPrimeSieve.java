@@ -23,7 +23,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
     }
 
     public static boolean isPrime(int p) {
-        p = this.maximum;
+        //p = this.maximum;
         prime = new boolean[p + 1];
         if (p <= 2){
             return false;
