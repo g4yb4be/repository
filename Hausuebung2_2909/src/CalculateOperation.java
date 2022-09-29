@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface CalculateOperation {
+public interface CalculateOperation {
+    Number calc(Number x, Number y);
 }
