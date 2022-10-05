@@ -39,7 +39,7 @@ public class NumberTester {
         return number % n == 0;
     });
 
-    setPalindromeTester(//??);
+    setPalindromeTester(//?);
 
     testFile();
     }
@@ -57,6 +57,16 @@ public class NumberTester {
     }
 
     public void testFile(){
+        for (String line : arrayList) {
+            String[] split = line.split(",");
 
+            if (split[0].equals("1")) {
+
+                } else {
+
+                }
+            
+
+        }
     }
 }
