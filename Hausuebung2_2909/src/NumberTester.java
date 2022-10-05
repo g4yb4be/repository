@@ -14,8 +14,14 @@ public class NumberTester {
     scanner.readFile;
 
     setOddEvenTester(number -> {
-        System.out.println("Nummer " + number + " ist eine gerade Zahl");
+        System.out.println(number + " ist eine gerade Zahl");
         return number % 2 == 0;
+    });
+
+    setPrimeTester(number -> {
+        for (int n = 2; n < Math.sqrt(number); n++)
+        System.out.println(number + " ist eine Primzahl");
+        return number % n == 0;
     });
     }
 
