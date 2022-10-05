@@ -6,7 +6,10 @@ public abstract class AbstractCalculator {
     protected CalculateOperation div;
 
     public AbstractCalculator(CalculateOperation add, CalculateOperation sub, CalculateOperation mul, CalculateOperation div){
-
+        this.add = add;
+        this.sub = sub;
+        this.mul = mul;
+        this.div = div;
     }
 
     public abstract Number add(Number a, Number b);

@@ -65,7 +65,7 @@ public class NumberTester {
                 } else {
 
                 }
-            
+
 
         }
     }
