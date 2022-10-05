@@ -1,4 +1,7 @@
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class NumberTester {
@@ -8,10 +11,22 @@ public class NumberTester {
     private NumberTester palindromeTester;
 
     Scanner scanner = new Scanner(System.in);
+    File file;
+    ArrayList<String> arrayList;
+
+    public void readFile() throws FileNotFoundException {
+        scanner = new Scanner(file);
+        arrayList = new ArrayList<>(List.of(scanner.nextLine().split(" ")));
+
+        while (scanner.hasNext()){
+            arrayList.addAll(List.of(scanner.nextLine().split(" ")));
+        }
+    }
+
 
     public NumberTester(String fileName) {
-    File file = new File(fileName);
-    scanner.readFile;
+     file = new File(fileName);
+    scanner.readFile();
 
     setOddEvenTester(number -> {
         System.out.println(number + " ist eine gerade Zahl");
@@ -23,6 +38,10 @@ public class NumberTester {
         System.out.println(number + " ist eine Primzahl");
         return number % n == 0;
     });
+
+    setPalindromeTester(//??);
+
+    testFile();
     }
 
     public void setOddEvenTester(NumberTester oddTester){
