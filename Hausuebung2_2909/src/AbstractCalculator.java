@@ -5,5 +5,7 @@ public abstract class AbstractCalculator {
     protected CalculateOperation mul;
     protected CalculateOperation div;
 
-    
+    public AbstractCalculator(CalculateOperation add, CalculateOperation sub, CalculateOperation mul, CalculateOperation div){
+        
+    }
 }
