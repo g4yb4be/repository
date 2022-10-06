@@ -2,12 +2,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-public class Weapon {
+public class Weapon implements Comparator {
     private String name;
     private CombatType combatType;
     private DamageType damageType;
@@ -27,7 +24,8 @@ public class Weapon {
     }
 
 
-
-
-
+    @Override
+    public int compare(Object o1, Object o2) {
+        return o1.;
+    }
 }
