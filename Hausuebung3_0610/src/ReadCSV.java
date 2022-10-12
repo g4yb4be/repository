@@ -9,7 +9,7 @@ public class ReadCSV {
     private File csvFile = new File("weapons.csv");
 
 
-    public void readCSV() throws FileNotFoundException {
+    public List<Weapon> readCSV() throws FileNotFoundException {
         Scanner scanner = new Scanner(csvFile);
         String delimiter = ";";
         String line;
@@ -21,5 +21,6 @@ public class ReadCSV {
             lines.add(w);
         }
         lines.forEach(x -> System.out.println(x));
+        return lines;
     }
 }
