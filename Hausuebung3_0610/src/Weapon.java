@@ -22,10 +22,39 @@ public class Weapon implements Comparator {
         this.strength = strength;
         this.value = value;
     }
+    public static Comparator<Weapon> sortByDmg() {
+        return Comparator.comparingInt(Weapon::getDamage);
+    }
 
+    public static Comparator<Weapon> sortByAlphabet() {
+        return Comparator.comparing(Weapon::getCombatType).thenComparing(Weapon::getDamageType).thenComparing(Weapon::getName);
+    }
 
-    @Override
-    public int compare(Object o1, Object o2) {
-        return o1.;
+    public String getName() {
+        return name;
+    }
+
+    public CombatType getCombatType() {
+        return combatType;
+    }
+
+    public DamageType getDamageType() {
+        return damageType;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getValue() {
+        return value;
     }
 }
