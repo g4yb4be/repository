@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 
-public class Weapon implements Comparator {
+public class Weapon {
     private String name;
     private CombatType combatType;
     private DamageType damageType;
@@ -57,4 +57,5 @@ public class Weapon implements Comparator {
     public int getValue() {
         return value;
     }
+
 }
