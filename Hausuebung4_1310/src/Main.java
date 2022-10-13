@@ -3,6 +3,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Main {
     private static ReadCSV readCSV = new ReadCSV();
@@ -24,6 +27,12 @@ public class Main {
         int chunks = Integer.parseInt(scanner.nextLine());
         System.out.println("divider>");
         int divider = Integer.parseInt(scanner.nextLine());
+
+        ThreadPoolExecutor executer = (ThreadPoolExecutor) Executors.newFixedThreadPool(chunks);
+        executer.execute(integer -> {
+            if(integer % divider == 0) System.out.println(integer);
+        });
+
 
 
 
