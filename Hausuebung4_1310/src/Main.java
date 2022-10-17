@@ -41,14 +41,13 @@ public class Main {
             }
         }
 
-        executer.execute(integer -> {
-            if(integer % divider == 0) System.out.println(integer);
+        List<Integer> finalList1 = finalList;
+        executer.execute(() -> { finalList1.stream().forEach(integer -> {
+                if(integer == null) return;
+                if (integer % divider == 0)
+                    System.out.println(integer);
+            });
         });
-
-
-
-
+        executer.shutdown();
     }
-
-
 }
