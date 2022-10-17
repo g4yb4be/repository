@@ -32,7 +32,7 @@ public class Main {
         ThreadPoolExecutor executer = (ThreadPoolExecutor) Executors.newFixedThreadPool(chunks);
         List<Integer> finalList = new ArrayList<>();
 
-        int chunksSize = intsList.size() / chunks;
+        int chunksSize = (int) ((double)intsList.size() / (double)chunks);
         for(int i = 0; i < intsList.size(); i+=chunksSize){
             if(i + chunksSize < intsList.size()){
                 finalList = intsList.subList(i, i + chunksSize);

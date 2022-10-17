@@ -8,9 +8,10 @@ import java.util.stream.Collectors;
 
 public class ReadCSV {
 
-    public ArrayList<Integer> readCSV(File file) throws IOException {
+    public List<String[]> readCSV(File file) throws IOException {
         List<String[]> list;
         list = Files.readAllLines(file.toPath()).stream().map(string -> string.split(":")).collect(Collectors.toList());
-        return null;
+        for()
+        return list;
     }
 }
