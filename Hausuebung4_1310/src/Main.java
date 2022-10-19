@@ -33,21 +33,27 @@ public class Main {
         List<Integer> finalList = new ArrayList<>();
 
         int chunksSize = (int) ((double)intsList.size() / (double)chunks);
-        for(int i = 0; i < intsList.size(); i+=chunksSize){
+        for(int i = -1; i < intsList.size(); i+=chunksSize){
             if(i + chunksSize < intsList.size()){
-                finalList = intsList.subList(i, i + chunksSize);
+                finalList = intsList.subList(i + 1, i + chunksSize);
+                List<Integer> finalList1 = finalList;
+                executer.execute(() -> { new ArrayList<Integer>(finalList1).stream().forEach(integer -> {
+                    if(integer == null) return;
+                    if (integer % divider == 0)
+                        System.out.println(integer);
+                });
+                });
             }else{
-                finalList = intsList.subList(i, intsList.size());
+                finalList = intsList.subList(i + 1, intsList.size());
+                List<Integer> finalList1 = finalList;
+                executer.execute(() -> { new ArrayList<Integer>(finalList1).stream().forEach(integer -> {
+                    if(integer == null) return;
+                    if (integer % divider == 0)
+                        System.out.println(integer);
+                });
+                });
             }
         }
-
-        List<Integer> finalList1 = finalList;
-        executer.execute(() -> { finalList1.stream().forEach(integer -> {
-                if(integer == null) return;
-                if (integer % divider == 0)
-                    System.out.println(integer);
-            });
-        });
         executer.shutdown();
     }
 }

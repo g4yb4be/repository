@@ -8,10 +8,19 @@ import java.util.stream.Collectors;
 
 public class ReadCSV {
 
-    public List<String[]> readCSV(File file) throws IOException {
+    public List<Integer> readCSV(File file) throws IOException {
         List<String[]> list;
+        List<Integer> finalList = new ArrayList<>();
         list = Files.readAllLines(file.toPath()).stream().map(string -> string.split(":")).collect(Collectors.toList());
-        for()
-        return list;
+        for(String[] arr : list){
+            for(String s : arr){
+                try{
+                    finalList.add(Integer.parseInt(s));
+                } catch(NumberFormatException numberFormatException){
+
+                }
+            }
+        }
+        return finalList;
     }
 }
