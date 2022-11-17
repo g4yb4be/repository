@@ -1,3 +1,6 @@
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
@@ -8,11 +11,11 @@ public class Main {
         ReentrantLock fork4 = new ReentrantLock();
         ReentrantLock fork5 = new ReentrantLock();
 
-        Ork ork1 = new Ork(fork1, fork2);
-        Ork ork2 = new Ork(fork3, fork4);
-        Ork ork3 = new Ork(fork, fork);
-        Ork ork4 = new Ork(fork, fork);
-        Ork ork5 = new Ork(fork, fork);
-
+        ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
+        threadPoolExecutor.execute(new Ork(fork1, fork2));
+        threadPoolExecutor.execute(new Ork(fork2, fork3));
+        threadPoolExecutor.execute(new Ork(fork3, fork4));
+        threadPoolExecutor.execute(new Ork(fork4, fork5));
+        threadPoolExecutor.execute(new Ork(fork5, fork1));
     }
 }
