@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a6fa642-ab70-4ed4-9b97-036c245b24ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/1_sudoku_level1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/2_sudoku_level1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/3_sudoku_level2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/Sudoku_StudentStub.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/manifest.mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/src/net/htlgrieskirchen/pos3/sudoku/ISodukoSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/src/net/htlgrieskirchen/pos3/sudoku/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/src/net/htlgrieskirchen/pos3/sudoku/SudokuSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/sudoku_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/sudoku_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudoku_StudentStub/uml.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2IIvezJeD4mVzjFs4oO8N3bgZiC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a6fa642-ab70-4ed4-9b97-036c245b24ed" name="Changes" comment="" />
+      <created>1669882012226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669882012226</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
